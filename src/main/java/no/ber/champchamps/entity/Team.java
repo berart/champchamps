@@ -4,7 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 
-import no.ber.champchamps.constants.Group;
+import no.ber.champchamps.constants.TournamentGroup;
 
 @Entity
 public class Team extends BaseEntity {
@@ -12,7 +12,7 @@ public class Team extends BaseEntity {
     private String name;
     private String code;
     @Enumerated(EnumType.STRING)
-    private Group group;
+    private TournamentGroup tournamentGroup;
 
     public String getName() {
         return name;
@@ -30,11 +30,11 @@ public class Team extends BaseEntity {
         this.code = code;
     }
 
-    public Group getGroup() {
-        return group;
+    public TournamentGroup getTournamentGroup() {
+        return tournamentGroup;
     }
 
-    public void setGroup(Group group) {
-        this.group = group;
+    public void setTournamentGroup(TournamentGroup tournamentGroup) {
+        this.tournamentGroup = tournamentGroup;
     }
 }

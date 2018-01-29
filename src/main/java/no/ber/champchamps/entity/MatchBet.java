@@ -5,7 +5,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 
 @Entity
-public class MatchBet extends Match {
+public class MatchBet extends BaseEntity {
 
     @ManyToOne
     private User user = null;
