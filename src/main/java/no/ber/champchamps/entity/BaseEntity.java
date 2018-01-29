@@ -20,49 +20,49 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 @EntityListeners(AuditingEntityListener.class)
 public abstract class BaseEntity {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	public Long id;
-	@NotNull
-	@CreatedDate
-	public LocalDateTime createdDate;
-	@NotNull
-	@LastModifiedDate
-	public LocalDateTime lastUpdatedDate;
-	@NotNull
-	@CreatedBy
-	public String createdBy;
-	@NotNull
-	@LastModifiedBy
-	public String lastUpdatedBy;
+    @Id
+    @GeneratedValue(strategy = GenerationType.TABLE)
+    public Long id;
+    @NotNull
+    @CreatedDate
+    public LocalDateTime createdDate;
+    @NotNull
+    @LastModifiedDate
+    public LocalDateTime lastUpdatedDate;
+    @NotNull
+    @CreatedBy
+    public String createdBy;
+    @NotNull
+    @LastModifiedBy
+    public String lastUpdatedBy;
 
-	public Long getId() {
-		return id;
-	}
+    public Long getId() {
+        return id;
+    }
 
-	public void setId(Long id) {
-		this.id = id;
-	}
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-	public LocalDateTime getCreatedDate() {
-		return createdDate;
-	}
+    public LocalDateTime getCreatedDate() {
+        return createdDate;
+    }
 
-	public LocalDateTime getLastUpdatedDate() {
-		return lastUpdatedDate;
-	}
+    public LocalDateTime getLastUpdatedDate() {
+        return lastUpdatedDate;
+    }
 
-	public String getCreatedBy() {
-		return createdBy;
-	}
+    public String getCreatedBy() {
+        return createdBy;
+    }
 
-	public String getLastUpdatedBy() {
-		return lastUpdatedBy;
-	}
+    public String getLastUpdatedBy() {
+        return lastUpdatedBy;
+    }
 
-	@Override
-	public String toString() {
-		return ReflectionToStringBuilder.toString(this);
-	}
+    @Override
+    public String toString() {
+        return ReflectionToStringBuilder.toString(this);
+    }
 
 }
