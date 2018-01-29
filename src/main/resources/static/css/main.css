@@ -37,13 +37,32 @@ code {
 }
 
 input.score {
-	width: 60px;
+	width: 40px;
+	text-align: center;
+}
+
+input {
+	border-style: hidden;
+	border-bottom-style: solid;
+	border-bottom-color: #ced4da;
+	border: 0px 0px 0px 1px;
 }
 
 textarea:focus, input:focus {
 	outline: none;
+	border: 0px 0px 0px 1px;
 }
 
 .right {
 	text-align: right;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button
+	{
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.matchresult {
+	text-align: center;
 }
