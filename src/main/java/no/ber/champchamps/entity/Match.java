@@ -5,11 +5,13 @@ import java.time.LocalDate;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.Inheritance;
 import javax.persistence.ManyToOne;
 
 import no.ber.champchamps.constants.Stage;
 
 @Entity
+@Inheritance
 public class Match extends BaseEntity {
 
     private LocalDate date;
