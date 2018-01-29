@@ -35,3 +35,15 @@ body>.container {
 code {
 	font-size: 80%;
 }
+
+input.score {
+	width: 60px;
+}
+
+textarea:focus, input:focus {
+	outline: none;
+}
+
+.right {
+	text-align: right;
+}

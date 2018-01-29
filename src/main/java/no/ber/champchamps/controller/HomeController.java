@@ -15,6 +15,11 @@ public class HomeController {
     public String home() {
         return "/home";
     }
+    
+    @GetMapping("/bet")
+    public String bet() {
+        return "/bet";
+    }
 
     @GetMapping("/admin")
     public String admin() {

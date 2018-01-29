@@ -2,7 +2,7 @@ package no.ber.champchamps.rule;
 
 import org.springframework.stereotype.Component;
 
-import no.ber.champchamps.entity.Bet;
+import no.ber.champchamps.entity.bet.Bet;
 
 @Component
 public class CorrectResult implements Rule {

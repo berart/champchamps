@@ -3,6 +3,8 @@ package no.ber.champchamps.entity;
 import javax.persistence.Entity;
 import javax.persistence.OneToOne;
 
+import no.ber.champchamps.entity.bet.Bet;
+
 @Entity
 public class User extends BaseEntity {
     private String username;

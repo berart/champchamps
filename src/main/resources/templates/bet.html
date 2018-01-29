@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header-css">
+</head>
+<body>
+	<div th:replace="fragments/header :: header"></div>
+	<div class="container">
+
+		<div class="starter-template">
+			<h1>Place your bet</h1>
+			<form th:action="@{/bet}" method="post">
+				<div class="container">
+					<div class="card-deck">
+
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Group A</h5>
+								<div class="card-text">
+									<div class="row">
+										<div class="col-sm right">
+											Norway<span class="flag-icon flag-icon-no"></span>
+										</div>
+										<div class="col-sm">
+											<span><input class="score input-sm" type="number" name="home"></span> - <span><input class="score input-sm"
+												type="number" name="away"></span>
+										</div>
+										<div class="col-sm">
+											<span class="flag-icon flag-icon-se"></span>Sweden
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm right">
+											Denmark<span class="flag-icon flag-icon-dk"></span>
+										</div>
+										<div class="col-sm">
+											<span><input class="score input-sm" type="number" name="home"></span> - <span><input class="score input-sm"
+												type="number" name="away"></span>
+										</div>
+										<div class="col-sm">
+											<span class="flag-icon flag-icon-fi"></span>Finland
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm right">
+											Norway<span class="flag-icon flag-icon-no"></span>
+										</div>
+										<div class="col-sm">
+											<span><input class="score input-sm" type="number" name="home"></span> - <span><input class="score input-sm"
+												type="number" name="away"></span>
+										</div>
+										<div class="col-sm">
+											<span class="flag-icon flag-icon-dk"></span>Denmark
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm right">
+											Norway<span class="flag-icon flag-icon-no"></span>
+										</div>
+										<div class="col-sm">
+											<span><input class="score input-sm" type="number" name="home"></span> - <span><input class="score input-sm"
+												type="number" name="away"></span>
+										</div>
+										<div class="col-sm">
+											<span class="flag-icon flag-icon-se"></span>Sweden
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm right">
+											Denmark<span class="flag-icon flag-icon-dk"></span>
+										</div>
+										<div class="col-sm">
+											<span><input class="score input-sm" type="number" name="home"></span> - <span><input class="score input-sm"
+												type="number" name="away"></span>
+										</div>
+										<div class="col-sm">
+											<span class="flag-icon flag-icon-fi"></span>Finland
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm right">
+											Norway<span class="flag-icon flag-icon-no"></span>
+										</div>
+										<div class="col-sm">
+											<span><input class="score input-sm" type="number" name="home"></span> - <span><input class="score input-sm"
+												type="number" name="away"></span>
+										</div>
+										<div class="col-sm">
+											<span class="flag-icon flag-icon-dk"></span>Denmark
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Table Group A</h5>
+								<div class="card-text">
+									<table style="width: 100%">
+										<tr>
+											<th>#</th>
+											<th>Team</th>
+											<th>Pl.</th>
+											<th>+/-</th>
+											<th>Pts.</th>
+										</tr>
+										<tr>
+											<td>1</td>
+											<td><span class="flag-icon flag-icon-no"></span>Norway</td>
+											<td>1</td>
+											<td>4</td>
+											<td>3</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td><span class="flag-icon flag-icon-fi"></span>Finland</td>
+											<td>1</td>
+											<td>2</td>
+											<td>3</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td><span class="flag-icon flag-icon-dk"></span>Denmark</td>
+											<td>1</td>
+											<td>-2</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td><span class="flag-icon flag-icon-se"></span>Sweden</td>
+											<td>1</td>
+											<td>-4</td>
+											<td>0</td>
+										</tr>
+									</table>
+									<!-- 									<div class="row"> -->
+									<!-- 										<div class="col-sm">1</div> -->
+									<!-- 										<div class="col-sm">Norway</div> -->
+									<!-- 										<div class="col-sm"></div> -->
+									<!-- 										<div class="col-sm"></div> -->
+									<!-- 									</div> -->
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<button type="submit" class="btn btn-primary">Place bet</button>
+			</form>
+
+		</div>
+
+	</div>
+	<!-- /.container -->
+
+	<div th:replace="fragments/footer :: footer"></div>
+
+</body>
+</html>
