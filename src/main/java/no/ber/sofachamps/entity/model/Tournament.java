@@ -1,5 +1,6 @@
 package no.ber.sofachamps.entity.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -12,7 +13,7 @@ public class Tournament extends BaseEntity {
 
     private String name;
     @ManyToMany
-    private List<Stage> stages;
+    private List<Stage> stages = new ArrayList<>();
 
     public String getName() {
         return name;

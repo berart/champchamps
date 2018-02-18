@@ -25,6 +25,14 @@ public class Match extends BaseEntity {
     @Enumerated(EnumType.STRING)
     private StageType stage;
 
+    public Match() {
+    }
+
+    public Match(Team home, Team away) {
+        this.home = home;
+        this.away = away;
+    }
+
     public Team getHome() {
         return home;
     }
@@ -80,6 +88,11 @@ public class Match extends BaseEntity {
 
     public void setDate(LocalDate date) {
         this.date = date;
+    }
+
+    @Override
+    public String toString() {
+        return home.getName() + " - " + away.getName();
     }
 
 }

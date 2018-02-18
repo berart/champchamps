@@ -19,4 +19,5 @@ public class ApplicationTests {
         BCryptPasswordEncoder b = new BCryptPasswordEncoder();
         System.out.println(b.encode("password"));
     }
+
 }
